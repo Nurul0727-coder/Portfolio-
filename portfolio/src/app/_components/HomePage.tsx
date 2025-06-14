@@ -21,7 +21,7 @@ export default function HomePage() {
             {" "}
             Би олон баг хамт олонтой  ажиллаж байсан туршлагатай учраас бие даан
             суралцах, багийн гишүүдтэйгээ хамтран ажиллахад тухтай хүн нь байж
-            чаддаг .
+            чаддаг.
           </p>
           <p className="mt-7 w-[700px] text-xl">
             Суралцахаа хэзээ ч зогсоохгүй, өдөр бүр код бичиж, шинэ технологи
@@ -31,7 +31,7 @@ export default function HomePage() {
             Ирээдүйд илүү том, нөлөө бүхий төслүүд дээр хувь нэмрээ оруулдаг,
             найдвартай хөгжүүлэгч болохоор зорьж байна.
           </p>
-          <div className="bg-[#f86c30] w-[170px] h-[40px] rounded-xl flex justify-center items-center text-xl mt-10 hover:bg-[#ec5514] pl-2">
+          <div className="bg-[#c9bafb] w-[170px] h-[40px] rounded-xl flex justify-center items-center text-xl mt-10 hover:bg-[#a8d1f8] pl-2">
             Talk to me
             <LiaArrowRightSolid className="m-2" />
           </div>
