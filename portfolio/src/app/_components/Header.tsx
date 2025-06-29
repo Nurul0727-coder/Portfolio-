@@ -6,7 +6,6 @@ import * as THREE from "three";
 import BlurText from "./BlurText";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
 import { motion } from "framer-motion";
 
 type VantaEffect = {
