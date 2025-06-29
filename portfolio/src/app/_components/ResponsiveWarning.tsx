@@ -31,7 +31,7 @@ export default function ResponsiveWarning() {
         zIndex: 9999,
       }}
     >
-      Хэзээ нэг өдөр утаснаас харагддаг болгоно доо хө!👻🌟
+      {" "}
     </div>
   );
 }
