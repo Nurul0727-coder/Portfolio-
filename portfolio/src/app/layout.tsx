@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, PT_Serif } from "next/font/google";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
+import ResponsiveWarning from "./_components/ResponsiveWarning";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +39,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${ptSerif.variable} antialiased`}
       >
+        <ResponsiveWarning />
         {children}
       </body>
     </html>
