@@ -1,17 +1,20 @@
-import Header from "./_components/Header";
-import LogoAnimation from "./_components/LogoAnimation";
-import About from "./About/page";
-import Contact from "./Contact/page";
-import ProjectCards from "./ProjectCards/page";
+"use client";
+import { useEffect, useState } from "react";
+import MobilePage from "./_components/MobilePage";
+import DesktopPage from "./_components/DesktopPage";
 
-export default function Home() {
-  return (
-    <>
-      <Header />
-      <About />
-      <ProjectCards />
-      <LogoAnimation />
-      <Contact />
-    </>
-  );
+export default function HomePage() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkDevice = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkDevice();
+    window.addEventListener("resize", checkDevice);
+    return () => window.removeEventListener("resize", checkDevice);
+  }, []);
+
+  return isMobile ? <MobilePage /> : <DesktopPage />;
 }
