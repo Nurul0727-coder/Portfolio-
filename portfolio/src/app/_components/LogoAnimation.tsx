@@ -60,12 +60,23 @@ export default function LogoAnimation() {
   ];
 
   return (
-    <div className="bg-white text-black overflow-hidden py-50">
+    <div className="bg-[#fef9f5] text-black overflow-hidden py-20">
+      <h2
+        className="text-3xl font-bold text-center mb-10 text-[#1f1f1f]"
+        style={{ fontFamily: "var(--font-pt-serif)" }}
+      >
+        Tech Stack
+      </h2>
       <div className="w-[200%] flex animate-scroll gap-10">
         {icons.concat(icons).map((item, index) => (
           <div key={index} className="flex flex-col items-center w-28">
             {item.icon}
-            <p className="text-md mt-2 text-center">{item.name}</p>
+            <p
+              className="text-md mt-2 text-center"
+              style={{ fontFamily: "var(--font-montserrat)" }}
+            >
+              {item.name}
+            </p>
           </div>
         ))}
       </div>

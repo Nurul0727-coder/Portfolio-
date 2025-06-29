@@ -1,19 +1,17 @@
-import Contact from "./_components/Contact";
-import { Footer } from "./_components/Footer";
 import Header from "./_components/Header";
-import HomePage from "./_components/HomePage";
 import LogoAnimation from "./_components/LogoAnimation";
-import ProjectCards from "./_components/ProjectCards";
+import About from "./About/page";
+import Contact from "./Contact/page";
+import ProjectCards from "./ProjectCards/page";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <HomePage />
+      <About />
       <ProjectCards />
       <LogoAnimation />
       <Contact />
-      <Footer />
     </>
   );
 }
