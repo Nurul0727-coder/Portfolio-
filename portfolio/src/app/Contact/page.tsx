@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { LiaArrowRightSolid } from "react-icons/lia";
-import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
 
 export default function Contact() {
   const [form, setForm] = useState({
